@@ -1,3 +1,7 @@
 <p>file-uploader-component works!</p>
-<input type="file" (change)="handleFileChange($event)" />
-    <button (click)="uploadChunks()">Upload</button>
+<input type="file" multiple (change)="handleFileChange($event)" />
+<button (click)="uploadFiles()">Upload2</button>
+
+<p>file-uploader-component streaming!</p>
+<input type="file" multiple (change)="handleFileChange2($event)" />
+<button (click)="uploadFiles3()">Upload2</button>
